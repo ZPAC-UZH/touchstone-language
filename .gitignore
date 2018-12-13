@@ -1,0 +1,14 @@
+# For OS X
+.DS_Store
+
+# node
+node_modules
+
+# IntelliJ project files
+*.iml
+*.iws
+*.ipr
+.idea/
+
+# Typescript-generated files
+dist

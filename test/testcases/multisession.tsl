@@ -1,0 +1,6 @@
+< Training = Between(Accel = {A,S}, 1,
+    Random(Device = {M,T,J,R}, 2, 
+      Fix(ID = {2,3}, 1))),
+  10 * Between(Accel = {A,S}, 1,
+    Latin(Device = {M,T,J,R}, 3,
+      Latin(ID = {2,3,5,6}, 1))) >

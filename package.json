@@ -1,0 +1,42 @@
+{
+  "name": "touchstone-language",
+  "description": "Printing the object for inspection",
+  "version": "1.0.1",
+  "main": "dist/src/tsl.js",
+  "scripts": {
+    "build": "node ./node_modules/typescript/lib/tsc -p .",
+    "test": "mocha --recursive --watch --reporter min './dist/test/**/*.js'",
+    "trial-table": "npm run build && node dist/src/run_generator.js 4 test/testcases/between_cross_variables.tsl",
+    "parser": "npm run build && node dist/src/run_parser.js test/testcases/between_nested.tsl",
+    "rpc-server": "node dist/src/rpc_server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ZPAC-UZH/touchstone-language.git"
+  },
+  "author": "Chat Wacharamanotham <chat@ifi.uzh.ch>",
+  "contributors": [
+    "Chat Wacharamanotham <chat@ifi.uzh.ch>",
+    "Alexander Eiselmayer <eiselmayer@ifi.uzh.ch>"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "@types/chai": "^4.1.4",
+    "@types/js-combinatorics": "^0.5.29",
+    "@types/mocha": "^5.2.6",
+    "@types/node": "^10.14.6",
+    "chai": "^4.1.2",
+    "mocha": "^5.2.0",
+    "typescript": "3.2.2"
+  },
+  "dependencies": {
+    "@types/lodash": "^4.14.123",
+    "jison": "^0.4.18",
+    "js-combinatorics": "^0.5.3",
+    "lodash": "^4.17.10",
+    "requirejs": "^2.3.5"
+  },
+  "optionalDependencies": {
+    "zerorpc": "^0.9.8"
+  }
+}

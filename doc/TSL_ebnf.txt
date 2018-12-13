@@ -1,0 +1,25 @@
+/* experiment sessions */
+ExpSeq   ::= '<' Session (',' ( 'Same' | Session ))* '>'
+Session  ::= ( Rep '*' )? (SesName '=')? Exp
+
+/* meta-block operations */
+Exp      ::= 'Between' Param | Blocks
+Blocks   ::= BlockExt ( 'x' ( BlockExt | 'Same') )*
+BlockExt ::= Block | 'Serial(' Block ')' 
+
+/* the design for each block */
+Block    ::= Strategy Param
+Strategy ::= 'Fix' | 'Random' | 'Complete' | 'Latin'
+Param    ::= '(' Vars ',' Rep (',' Blocks )? ')'
+
+/* independent variable levels and placeholders */
+Vars     ::= Var ( 'x' Vars )*
+Var      ::= VarName '= {' Level ( ',' Level )* '}' 
+Level    ::= Placeholder | LvlName
+Placeholder ::= '_' [0-9]+ '_'
+
+/* literals */
+SesName  ::= [a-zA-Z0-9]+
+VarName  ::= [a-zA-Z0-9]+
+LvlName  ::= ([a-zA-Z0-9]|['-''_'])+
+Rep      ::= [1-9] [0-9]*

@@ -1,0 +1,4 @@
+< Latin(Device = {M, _1_, T, _2_, J}, 3,
+    Latin(ID = {2,3,5,6}, 1))
+x Latin(Device = {P,R}, 5, 
+    Latin(ID = {2,3,4}, 1)) >

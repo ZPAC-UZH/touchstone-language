@@ -1,0 +1,102 @@
+{
+	"name": "complete",
+	"type": "design",
+	"blocks": [
+		{
+			"replications": "2",
+			"counterbalancing": "complete",
+			"independentVariables": [
+				{
+					"id": "D",
+					"name": "Device",
+					"levels": [
+						{
+							"value": "M",
+							"duration": 1
+						},
+						{
+							"value": "T",
+							"duration": 1
+						},
+						{
+							"value": "J",
+							"duration": 1
+						}
+					]
+				}
+			],
+			"serial": true
+		}
+	],
+	"participants": "6",
+	"intertrialTime": "1",
+	"interblockTime": "1",
+	"trialTable": [
+		[
+			[
+				"M"
+			],
+			[
+				"T"
+			],
+			[
+				"J"
+			]
+		],
+		[
+			[
+				"M"
+			],
+			[
+				"J"
+			],
+			[
+				"T"
+			]
+		],
+		[
+			[
+				"T"
+			],
+			[
+				"M"
+			],
+			[
+				"J"
+			]
+		],
+		[
+			[
+				"T"
+			],
+			[
+				"J"
+			],
+			[
+				"M"
+			]
+		],
+		[
+			[
+				"J"
+			],
+			[
+				"M"
+			],
+			[
+				"T"
+			]
+		],
+		[
+			[
+				"J"
+			],
+			[
+				"T"
+			],
+			[
+				"M"
+			]
+		]
+	]
+}

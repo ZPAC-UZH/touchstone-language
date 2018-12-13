@@ -1,0 +1,8 @@
+< Latin(Device = {M,T,J}, 3,
+    Fix(Scale = {1, 2}, 1,
+	    Latin(ID = {2,3,5,6}, 1)))
+x Latin(Device = {P,R}, 3,
+	Same)
+x Latin(Device = {S,G}, 3,
+    Fix(Scale = {2}, 1,
+        Same)) >
