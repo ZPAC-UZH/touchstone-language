@@ -131,3 +131,7 @@ If you use or build upon TSL, please cite the following paper.
  keywords = {counterbalancing, experiment design, power analysis, randomization, reproducibility},
 } 
 ```
+## Issues, questions, problems?
+
+Please report them on the [Issues](https://github.com/ZPAC-UZH/touchstone2/issues) page. 
+We will check this once a week until the end of 2019.
